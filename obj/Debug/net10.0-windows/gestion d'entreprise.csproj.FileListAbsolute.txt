@@ -1,0 +1,17 @@
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion_d_entreprise.Form1.resources
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.csproj.GenerateResource.cache
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.AssemblyInfoInputs.cache
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.AssemblyInfo.cs
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.csproj.CoreCompileInputs.cache
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\bin\Debug\net10.0-windows\gestion d'entreprise.exe
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\bin\Debug\net10.0-windows\gestion d'entreprise.deps.json
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\bin\Debug\net10.0-windows\gestion d'entreprise.runtimeconfig.json
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\bin\Debug\net10.0-windows\gestion d'entreprise.dll
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\bin\Debug\net10.0-windows\gestion d'entreprise.pdb
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.dll
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\refint\gestion d'entreprise.dll
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.pdb
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.genruntimeconfig.cache
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\ref\gestion d'entreprise.dll
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion .3E45C0B7.Up2Date
