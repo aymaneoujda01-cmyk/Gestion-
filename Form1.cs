@@ -110,7 +110,17 @@ namespace gestion_d_entreprise
 
         private void button4_Click(object sender, EventArgs e)
         {
-             
+            string A = comboBox1.Text;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+             if (row.Cells[4].Value != null && row.Cells[4].Value.ToString() == A)
+                {
+                    textBox1.Text = row.Cells[0].Value.ToString();
+                    textBox2.Text = row.Cells[1].Value.ToString();
+                    numericUpDown1.Value = Convert.ToDecimal(row.Cells[2].Value);
+                    richTextBox1.Text = row.Cells[3].Value.ToString();
+                }
+            }
         }
-    }
+    }   
 }
