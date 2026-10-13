@@ -33,7 +33,6 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -43,6 +42,7 @@
             dataGridView1 = new DataGridView();
             label5 = new Label();
             comboBox1 = new ComboBox();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -88,16 +88,6 @@
             label3.Size = new Size(77, 25);
             label3.TabIndex = 4;
             label3.Text = "quantity";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(667, 289);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 5;
-            button1.Text = "Ajouter";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -179,12 +169,24 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(245, 33);
             comboBox1.TabIndex = 15;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(667, 289);
+            button5.Name = "button5";
+            button5.Size = new Size(112, 34);
+            button5.TabIndex = 16;
+            button5.Text = "ajouter";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(920, 503);
+            Controls.Add(button5);
             Controls.Add(comboBox1);
             Controls.Add(label5);
             Controls.Add(dataGridView1);
@@ -194,7 +196,6 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -216,7 +217,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
@@ -226,5 +226,6 @@
         private DataGridView dataGridView1;
         private Label label5;
         private ComboBox comboBox1;
+        private Button button5;
     }
 }
