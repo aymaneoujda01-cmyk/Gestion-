@@ -43,6 +43,8 @@
             label5 = new Label();
             comboBox1 = new ComboBox();
             button5 = new Button();
+            button1 = new Button();
+            LAST = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -107,6 +109,7 @@
             button3.TabIndex = 7;
             button3.Text = "supprimer";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -181,11 +184,33 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(21, 464);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 17;
+            button1.Text = "FIRST";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // LAST
+            // 
+            LAST.Location = new Point(507, 464);
+            LAST.Name = "LAST";
+            LAST.Size = new Size(112, 34);
+            LAST.TabIndex = 18;
+            LAST.Text = "LAST";
+            LAST.UseVisualStyleBackColor = true;
+            LAST.Click += LAST_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(920, 503);
+            Controls.Add(LAST);
+            Controls.Add(button1);
             Controls.Add(button5);
             Controls.Add(comboBox1);
             Controls.Add(label5);
@@ -227,5 +252,7 @@
         private Label label5;
         private ComboBox comboBox1;
         private Button button5;
+        private Button button1;
+        private Button LAST;
     }
 }

@@ -12,7 +12,7 @@ namespace gestion_d_entreprise
 
         }
 
-     
+
 
 
 
@@ -144,5 +144,65 @@ namespace gestion_d_entreprise
             numericUpDown1.Value = cible;
             richTextBox1.Clear();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                if (row.Cells[4].Value != null)
+                {
+                    comboBox1.Items.Remove(comboBox1.SelectedItem);
+                    dataGridView1.Rows.Remove(row);
+                    if (true)
+                    {
+                        comboBox1.Text = string.Empty;
+                    }
+                    break;
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+
+
+        {
+            if (dataGridView1.Rows.Count == 0)
+                return;
+
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[0];
+            dataGridView1.Rows[0].Selected = true;
+        }
+
+        private void LAST_Click(object sender, EventArgs e)
+        
+            
+        {
+            if (dataGridView1.Rows.Count == 0)
+                return;
+
+            int lastRow = dataGridView1.Rows.Count - 1;
+
+            if (dataGridView1.AllowUserToAddRows &&
+                dataGridView1.Rows[lastRow].IsNewRow)
+            {
+                lastRow--;
+            }
+
+            if (lastRow < 0)
+                return;
+
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = dataGridView1.Rows[lastRow].Cells[0];
+            dataGridView1.Rows[lastRow].Selected = true;
+        }
     }
+    
+
+
+
 }
+
+
+
+ 
