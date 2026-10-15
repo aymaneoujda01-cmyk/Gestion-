@@ -44,6 +44,8 @@
             comboBox1 = new ComboBox();
             button5 = new Button();
             button1 = new Button();
+            PRECEDENT = new Button();
+            SUIVANT = new Button();
             LAST = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -194,6 +196,26 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // PRECEDENT
+            // 
+            PRECEDENT.Location = new Point(150, 464);
+            PRECEDENT.Name = "PRECEDENT";
+            PRECEDENT.Size = new Size(112, 34);
+            PRECEDENT.TabIndex = 19;
+            PRECEDENT.Text = "précédent";
+            PRECEDENT.UseVisualStyleBackColor = true;
+            PRECEDENT.Click += PRECEDENT_Click;
+            // 
+            // SUIVANT
+            // 
+            SUIVANT.Location = new Point(377, 464);
+            SUIVANT.Name = "SUIVANT";
+            SUIVANT.Size = new Size(112, 34);
+            SUIVANT.TabIndex = 20;
+            SUIVANT.Text = "suivant";
+            SUIVANT.UseVisualStyleBackColor = true;
+            SUIVANT.Click += SUIVANT_Click;
+            // 
             // LAST
             // 
             LAST.Location = new Point(507, 464);
@@ -210,6 +232,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(920, 503);
             Controls.Add(LAST);
+            Controls.Add(SUIVANT);
+            Controls.Add(PRECEDENT);
             Controls.Add(button1);
             Controls.Add(button5);
             Controls.Add(comboBox1);
@@ -253,6 +277,8 @@
         private ComboBox comboBox1;
         private Button button5;
         private Button button1;
+        private Button PRECEDENT;
+        private Button SUIVANT;
         private Button LAST;
     }
 }

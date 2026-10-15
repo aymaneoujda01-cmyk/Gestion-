@@ -6,6 +6,8 @@ namespace gestion_d_entreprise
 {
     public partial class Form1 : Form
     {
+        public int ProductRowCount { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -163,45 +165,51 @@ namespace gestion_d_entreprise
         }
 
         private void button1_Click(object sender, EventArgs e)
-
-
         {
-            if (dataGridView1.Rows.Count == 0)
-                return;
-
-            dataGridView1.ClearSelection();
-            dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[0];
             dataGridView1.Rows[0].Selected = true;
+            dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[0];
         }
 
         private void LAST_Click(object sender, EventArgs e)
-        
-            
         {
-            if (dataGridView1.Rows.Count == 0)
-                return;
+            dataGridView1.Rows[dataGridView1.Rows.Count - 2].Selected = true;
+            dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.Rows.Count - 2].Cells[0];
+        }
 
-            int lastRow = dataGridView1.Rows.Count - 1;
-
-            if (dataGridView1.AllowUserToAddRows &&
-                dataGridView1.Rows[lastRow].IsNewRow)
+        private void PRECEDENT_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                lastRow--;
+                int currentIndex = row.Index;
+                int ligne = dataGridView1.Rows.Count - 1;
+                if (currentIndex > 0)
+                {
+                    dataGridView1.Rows[currentIndex - 1].Selected = true;
+                    dataGridView1.CurrentCell = dataGridView1.Rows[currentIndex - 1].Cells[0];
+                }
             }
+        }
 
-            if (lastRow < 0)
-                return;
-
-            dataGridView1.ClearSelection();
-            dataGridView1.CurrentCell = dataGridView1.Rows[lastRow].Cells[0];
-            dataGridView1.Rows[lastRow].Selected = true;
+        private void SUIVANT_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                int currentIndex = row.Index;
+                int ligne = dataGridView1.Rows.Count - 1;
+                if (currentIndex < ligne - 1)
+                {
+                    dataGridView1.Rows[currentIndex + 1].Selected = true;
+                    dataGridView1.CurrentCell = dataGridView1.Rows[currentIndex + 1].Cells[0];
+                }
+            }
         }
     }
-    
-
-
-
 }
+
+
+
+
+
 
 
 

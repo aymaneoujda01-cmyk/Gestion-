@@ -14,6 +14,6 @@ C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug
 C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.pdb
 C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.genruntimeconfig.cache
 C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\ref\gestion d'entreprise.dll
-C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion .3E45C0B7.Up2Date
 C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion d'entreprise.sourcelink.json
 C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion_d_entreprise.Properties.Resources.resources
+C:\Users\AYMANE\source\repos\gestion d'entreprise\gestion d'entreprise\obj\Debug\net10.0-windows\gestion .3E45C0B7.Up2Date
