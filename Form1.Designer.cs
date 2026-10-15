@@ -47,6 +47,7 @@
             PRECEDENT = new Button();
             SUIVANT = new Button();
             LAST = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -226,11 +227,22 @@
             LAST.UseVisualStyleBackColor = true;
             LAST.Click += LAST_Click;
             // 
+            // button6
+            // 
+            button6.Location = new Point(734, 412);
+            button6.Name = "button6";
+            button6.Size = new Size(112, 34);
+            button6.TabIndex = 21;
+            button6.Text = "ENREGISTRER";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(920, 503);
+            Controls.Add(button6);
             Controls.Add(LAST);
             Controls.Add(SUIVANT);
             Controls.Add(PRECEDENT);
@@ -280,5 +292,6 @@
         private Button PRECEDENT;
         private Button SUIVANT;
         private Button LAST;
+        private Button button6;
     }
 }

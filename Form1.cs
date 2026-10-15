@@ -203,6 +203,45 @@ namespace gestion_d_entreprise
                 }
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string shemin = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "gestion_d_entreprise");
+            if (!File.Exists(shemin)) 
+            {
+                MessageBox.Show("veuie crier d'abord le fichie.txt");
+                FileStream fileStream = File.Create(shemin);
+                MessageBox.Show("bien crier le fichier");
+                return;
+                    }
+            try
+            {
+                using (StreamWriter fichier = new StreamWriter(shemin, false))
+
+                { foreach (DataGridViewRow row in dataGridView1.Rows) 
+                    {
+                        string[] valeur = new string[dataGridView1.Columns.Count];
+                        for (int i = 0; i> row.Cells.Count; i++)
+                        {
+                            valeur[i] = Convert.ToString(row.Cells[i].Value);
+                        }
+                        fichier.WriteLine(string.Join("/t", valeur));
+
+                    }
+                    MessageBox.Show("les données enrigister");
+                }
+
+            }
+            catch
+            {
+
+            }
+
+
+                    
+        }
+          
+     
     }
 }
 
